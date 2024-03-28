@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mycelgwapa" alt="mycelgwapa" /></a> </p>
 
-- 🔭 I’m currently working on a [Project Hexu](https://github.com/mycelgwapa/mainpage)
+- 🔭 I’m currently working on a [Website](https://github.com/mycelgwapa/mainpage)
 
 - 🌱 I’m currently learning **vue, java, Sql, ruby, rust,**
 
