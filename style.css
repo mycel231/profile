@@ -1,0 +1,182 @@
+*{
+  font-family: 'Poppins', Sans-Serif;
+}
+body{
+  background-color: #fff0ff;
+}
+.container {
+  width: 300px;
+  height: 300px;
+  background-color: #ffffff;
+  clip-path: circle(50%);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease; /* Smooth transition for container */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container:hover {
+  height: 500px;
+  width: 380px;/* Increase height on hover */
+  clip-path: circle(100%); /* Adjust clip-path on hover */
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 3px #ffffffe3,
+            0  1px 2px 3px #ffffffe3;
+border: 1px solid #ffffffe3;
+}
+
+.img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 1s ease; /* Smooth transition for the image */
+  
+}
+.container:hover .img {
+  top: 140px; /* Move the image to the center top on hover */
+}
+
+.img img {
+  width: 200px;
+  height: 200px;
+  background-color: #73c1db;
+  border-radius: 50%;
+  border: 1px solid #73c1db;
+  box-shadow: 0 1px 2px 3px #73c1dbb8;
+}
+
+h1,
+h3,
+p,
+li,
+ul,
+.underline,
+a {
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Smooth transition for other elements */
+}
+
+.container:hover h1,
+.container:hover li,
+.container:hover ul,
+.container:hover h3,
+.container:hover p,
+.container:hover .underline,
+.container:hover a {
+  opacity: 1;
+}
+
+h1  {
+  color: black;
+  font-size: 1em;
+  font-weight: 600;
+  position: absolute;
+  top: 310px;
+  left: 50px;
+}
+p{
+  color: black;
+  position: absolute;
+  top: 330px;
+  left: 80px;
+}
+.underline {
+  width: 20rem;
+  height: 8px;
+  background-color: black;
+  position: absolute;
+  top: 380px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+}
+h3{
+  position: absolute;
+  bottom: 65px;
+  left: 30px;
+}
+li{
+  list-style: none;
+  display: inline-block;
+}
+li a{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+} 
+ul {
+  position: absolute;
+  bottom: 30px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+ul {
+  position: absolute;
+  bottom: 30px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  display: flex; /* Make the list horizontal */
+}
+
+li {
+  margin: 0 10px; /* Adjust spacing between links */
+}
+
+a {
+  color: #fffff0ff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent; /* Add a transparent border bottom */
+  transition: border-bottom-color 0.3s ease; /* Smooth transition for border color */
+}
+
+a:hover {
+  border-bottom-color: #3a2e2e33; /* Change border color on hover */
+}
+.header-container {
+  position: absolute;
+  bottom: 30px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-text {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.animate-text {
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3); !important;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #E3F2FD 0%,
+    #00b9ff 29%,
+    #00e9ff 67%,
+    #E3F2FD 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
