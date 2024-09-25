@@ -59,7 +59,6 @@ body{
 }
 
 h1,
-h3,
 p,
 .underline
  {
@@ -68,10 +67,8 @@ p,
 }
 
 .container:hover h1,
-.container:hover h3,
 .container:hover p,
-.container:hover .underline,
-.container:hover a {
+.container:hover .underline {
   opacity: 1;
 }
 
@@ -87,26 +84,21 @@ p{
   color: #edf2f4;
   position: absolute;
   top: 320px;
-  left: 100px;
+  left: 185px;
   font-weight: 600;
   font-size: 20px;
 }
 .underline {
   width: 25rem;
   height: 8px;
-  background-color: #427aa1;
-  box-shadow: 0 0 10px #427aa1,
-              0 0 20px #427aa1;
+  background-color: #8c9ca8;
+  box-shadow: 0 0 10px #7a8f9e,
+              0 0 20px #7a8f9e;
   position: absolute;
   top: 380px;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 2px;
-}
-h3{
-  position: absolute;
-  bottom: 65px;
-  left: 30px;
 }
 .header-container {
   position: absolute;
